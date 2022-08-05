@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+
+    <!--  使用bean元素的autowire属性完成自动装配 不使用注解 -->
+    <bean id="userDao"
+          class="com.itheima.annotation1.UserDaoImpl1"/>
+    <bean id="userService"
+          class="com.itheima.annotation1.UserServiceImpl1" autowire="byName"/>
+    <bean id="userController"
+          class="com.itheima.annotation1.UserController1" autowire="byName"/>
+</beans>
