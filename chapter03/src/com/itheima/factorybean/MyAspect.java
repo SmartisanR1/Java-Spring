@@ -13,7 +13,6 @@ public class MyAspect implements MethodInterceptor {
         System.out.println("模拟记录日志...");
     }
 
-
     @Override
     public Object invoke(MethodInvocation methodInvocation) throws Throwable {
         check_Permissions();
