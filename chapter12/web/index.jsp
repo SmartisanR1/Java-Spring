@@ -5,6 +5,6 @@
     <title>$Title$</title>
   </head>
   <body>
-  <jsp:forward page="/WEB-INF/jsp/first.jsp" />
+      $END$
   </body>
 </html>
